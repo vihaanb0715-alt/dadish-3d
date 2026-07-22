@@ -41,7 +41,7 @@
     var e = (n(2), document.getElementsByTagName("script")),
       o = e[e.length - 1].src,
       i = o.split("master-loader.js")[0],
-      c = { unity: "unity.js", "unity-2020": "unity-2020.js" };
+      c = { unity: "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/dadish-3d@main/loaders/v3/unity.js", "unity-2020": "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/dadish-3d@main/loaders/v3/unity-2020.js" };
     if (
       (window.location.href.indexOf("pokiForceLocalLoader") >= 0 &&
         ((c.unity = "/unity/dist/unity.js"),
@@ -62,16 +62,16 @@
         case "2019":
           window.config.unityWebglLoaderUrl =
             1 === f
-              ? "loaders/v2/unity/static/UnityLoader.2019.1.js"
-              : "loaders/v2/unity/static/UnityLoader.2019.2.js";
+              ? "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/dadish-3d@main/loaders/v2/unity/static/UnityLoader.2019.1.js"
+              : "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/dadish-3d@main/loaders/v2/unity/static/UnityLoader.2019.2.js";
           break;
         default:
           window.config.unityWebglLoaderUrl =
-            "loaders/v2/unity/static/UnityLoader.js";
+            "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/dadish-3d@main/loaders/v2/unity/static/UnityLoader.js";
       }
     }
     var d = document.createElement("script");
-    (d.src = "scripts/v2/poki-sdk.js"),
+    (d.src = "https://cdn.jsdelivr.net/gh/vihaanb0715-alt/dadish-3d@main/scripts/v2/poki-sdk.js"),
       (d.onload = function () {
         var t = document.createElement("script");
         (t.src = i + a), document.body.appendChild(t);
